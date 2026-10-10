@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>hector_pose_estimation</name>
+  <version>0.4.0</version>
+  <description>
+    hector_pose_estimation provides the hector_pose_estimation node and the hector_pose_estimation nodelet.
+  </description>
+  <maintainer email="joh@nnes-meyer.de">Johannes Meyer</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/hector_pose_estimation</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author email="joh@nnes-meyer.de">Johannes Meyer</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+  <depend>hector_pose_estimation_core</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>message_filters</depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+
+  <!-- Dependencies needed only for running tests. -->
+
+  <export>
+   <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
